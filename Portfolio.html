@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<style>
+
+body   {
+background: #2A7B9B;
+background: linear-gradient(90deg, rgb(29, 89, 112) 0%, rgb(33, 78, 102) 50%, rgb(0, 0, 0) 100%);
+       font-family:  "Poppins", sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family:  "Poppins", sans-serif;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 600px;;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+
+img{
+    text-align: center;
+    margin-left:650px;
+    border-radius: 250px;
+    height:350px;
+}
+</style>
+<body>
+    <section id="home">
+        <div>
+            <h1>MY PORTFOLIO</h1>
+        </div>
+
+
+    <ul>
+    <li><a onclick="showPage('github')">GiTHUB</a></li>
+    <li><a onclick="showPage('linkedin')">LinkedIn</a></li>
+    </ul>
+
+        <div>
+            <br><img src="https://th.bing.com/th/id/OIP.KgBsUwlcyI43PmnOgrFQcgHaEo?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo">
+            
+            <h2>MUHAMMAD ZULQARNAEN BIN MOHD ZAILANI</h2>
+            <p>Still trying to learn more from all kind of people. <br> 
+                Love playing games. <br> 
+                The type that follow the flow.
+            </p>
+        </div>
+    </section>
+
+    <section id="github" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>GITHUB</h1>
+        </div>
+        
+        <div>
+            <h3>Repository</h3>
+            <div>DSGSDGDS</div>
+            <div>DSGSDGDS</div>
+            <div>DSGSDGDS</div>
+        </div>
+    </section>
+
+    <section id="linkedin" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>LINKEDIN</h1>
+        </div>
+        
+        <div>
+            <h3>Experience</h3>
+            <div>DSGSDGDS</div>
+            
+            <h3>Education</h3>
+            <div>Diploma in Computer Science at Universiti Teknologi Malaysia (UTM)<br>
+                Bachelor in Computer Science Universiti Sultan Azlan Shah (USAS)
+            </div>
+
+            <h3>Licenses & certifications</h3>
+            <div>DSGSDGDS</div>
+
+            <h3>Skills</h3>
+            <div>DSGSDGDS</div>
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('github').style.display = 'none';
+            document.getElementById('linkedin').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
